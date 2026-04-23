@@ -97,6 +97,20 @@ Upload the generated `csl.jsonl` to any platform that supports SFT fine-tuning (
 
 ---
 
+### Web App Usage
+
+If you have already trained your own model, you can directly use the online app here:
+
+https://honghongzhong.github.io/EssayRewriter/
+
+The app supports a two-layer workflow for faster paper rewriting:
+
+1. First pass: reduce AIGC style;
+2. Second pass: keep the rewritten content while aligning formatting to the original text.
+
+
+---
+
 ### License
 
 The dataset is released under the [CSL original license](https://github.com/ydli-ai/CSL). Scripts are released under the [MIT License](LICENSE).
@@ -193,6 +207,20 @@ python Scripts/build_jsonl.py <tsv1_path> <tsv2_path> [--template <template_path
 ### 模型训练
 
 将生成的 `csl.jsonl` 上传至支持 SFT 微调的平台（如阿里云百炼、火山引擎 MaaS 等），选择合适的基座模型进行监督微调，即可得到具备降低 AIGC 检测率能力的学术改写模型。
+
+---
+
+### 网页应用使用
+
+如果你已经训练好了自己的模型，可以直接使用在线应用：
+
+https://honghongzhong.github.io/EssayRewriter/
+
+该应用内置两层调用结构，可快速改写论文：
+
+1. 第一层：先进行降 AIGC 风格改写；
+2. 第二层：在保持改写内容不变的前提下，按原文格式进行对齐整理。
+
 
 ---
 
